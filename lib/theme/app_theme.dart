@@ -25,8 +25,8 @@ class AppTheme {
         fontStyle: FontStyle.italic,
         decoration: TextDecoration.underline,
         decorationColor: primaryColor,
-        decorationStyle: TextDecorationStyle.wavy,
-        decorationThickness: 2.0,
+        decorationStyle: TextDecorationStyle.double,
+        decorationThickness: 1.2,
       ),
 
       // Estilo para texto muy pequeño
