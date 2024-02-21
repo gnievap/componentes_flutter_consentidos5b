@@ -32,7 +32,8 @@ class AppTheme {
       // Estilo para texto muy pequeño
       bodySmall: GoogleFonts.montserrat(
         color: secondaryColor,
-        fontSize: 16.0,
+        fontStyle: FontStyle.italic,
+        fontSize: 18.0,
       ),
     ),
   );
