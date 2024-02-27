@@ -9,7 +9,7 @@ class AppTheme {
   static const secondaryColor = Colors.black;
   // Constante de color de fondo
   static const backColor = Color.fromARGB(238, 237, 239, 240);
-
+  static const backColor2 = Color.fromARGB(237, 87, 88, 88);
   // Constante de tema
   static final ThemeData lightTheme = ThemeData.light().copyWith(
     scaffoldBackgroundColor: backColor,
@@ -49,6 +49,11 @@ class AppTheme {
         decorationColor: primaryColor,
         decorationStyle: TextDecorationStyle.double,
         decorationThickness: 1.2,
+      ),
+      headlineMedium: GoogleFonts.montserrat(
+        color: secondaryColor,
+        fontSize: 21.5,
+        fontWeight: FontWeight.bold,
       ),
 
       // Estilo para texto muy pequeño
