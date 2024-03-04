@@ -9,7 +9,7 @@ class AppTheme {
   static const secondaryColor = Colors.black;
   // Constante de color de fondo
   static const backColor = Color.fromARGB(238, 237, 239, 240);
-  static const backColor2 = Color.fromARGB(237, 87, 88, 88);
+  static const backColor2 = Color.fromARGB(236, 95, 97, 97);
   // Constante de tema
   static final ThemeData lightTheme = ThemeData.light().copyWith(
     scaffoldBackgroundColor: backColor,
