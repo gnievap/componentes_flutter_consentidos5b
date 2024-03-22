@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "251779995976",
+    "project_id": "comp5b-24",
+    "storage_bucket": "comp5b-24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251779995976:android:0ee9ab76aad86889333b7d",
+        "android_client_info": {
+          "package_name": "com.example.practica3_5b24"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3a08Th6R4O4ii5z0bAi9pUUlSrKEyhsw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
