@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:practica3_5b24/screens/home_screen.dart';
 import 'package:practica3_5b24/screens/images_screen.dart';
 import 'package:practica3_5b24/screens/notifications_screen.dart';
+import 'package:practica3_5b24/services/firebase_services.dart';
 import 'package:practica3_5b24/theme/app_theme.dart';
 
 class InfiniteScrollScreen extends StatefulWidget {
@@ -20,8 +21,23 @@ class _InfiniteScrollScreenState extends State<InfiniteScrollScreen> {
       appBar: AppBar(
         title: const Text('Lista'),
       ),
-      body: const Center(
-        child: Text('Lista'),
+      body: FutureBuilder(
+        future: getAlumnos(),
+        builder: ((context, snapshot) {
+          if (snapshot.hasData) {
+            return ListView.builder(
+                itemCount: snapshot.data?.length,
+                itemBuilder: (context, index) {
+                  return Center(
+                    child: Text(snapshot.data?[index]['nombre']),
+                  );
+                });
+          } else {
+            return const Center(
+              child: CircularProgressIndicator(),
+            );
+          }
+        }),
       ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: indexNavigation,
